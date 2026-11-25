@@ -1,6 +1,6 @@
 export default function Entry() {
     return (
-        <main>
+        <main className="boxes">
             <section className = "normal-box">
                 <article className="box1">
                     <h1>hello from box</h1>

@@ -1,6 +1,6 @@
 html, body {
-    margin: 0;
     background-color: #F7F3FC;
+    margin: 10px;
 }
 
 body {
@@ -18,6 +18,7 @@ header {
     align-items: center;
     color: #000000;
     height: 55px;
+    border-radius: 20px;
 }
 
 
@@ -26,9 +27,19 @@ header > h1 {
     font-weight: 500;
 }
 
-.normal-box > article{
+.box1,
+.box2,
+.special-box,
+.timeline,
+.socials {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 20px;
+}
+.normal-box > article,
+.timeline,
+.socials{
     background-color: #E9DDF8;
-    border-radius: 20px;
 }
 
 .box1{
