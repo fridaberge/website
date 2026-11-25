@@ -1,3 +1,5 @@
+const base = import.meta.env.BASE_URL
+
 export default function Entry() {
     return (
         <div className="boxes">
