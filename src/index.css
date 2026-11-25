@@ -1,14 +1,21 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 html, body {
     background-color: #F7F3FC;
-    margin: 10px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    margin: 20px 10px;
 }
 
 body {
-    font-family: Inter;
-}
-
-.container {
-    margin: 45px 40px;
+    font-family: Inter, sans-serif;
 }
 
 header {
@@ -27,14 +34,57 @@ header > h1 {
     font-weight: 500;
 }
 
+.main{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+    margin: 15px 0 0;
+    width: 100%;
+}
+
+.boxes,
+.sidebar {
+  overflow-wrap: anywhere;
+}
+
+.boxes{
+    display: flex;
+    flex: 1;
+    min-width: 0;
+    gap: 20px;
+}
+
+.normal-box{
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.special-box{
+    flex: 1;
+    min-width: 0;
+    background-color: #C9ADE9;
+}
+
+.sidebar{
+    flex: 0 0 25%;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
 .box1,
 .box2,
 .special-box,
 .timeline,
 .socials {
   padding: 10px;
-  margin: 10px;
   border-radius: 20px;
+  overflow-wrap: anywhere;
 }
 .normal-box > article,
 .timeline,
@@ -48,6 +98,24 @@ header > h1 {
 .box2{
 }
 
-.special-box{
-    background-color: #C9ADE9;
+
+
+@media (max-width: 768px) {
+   .container {
+        margin: 20px 10px;
+    }
+    .main {
+    flex-direction: column;
+    }
+
+    .boxes,
+    .sidebar {
+        width: 100%;
+        position: static;
+        flex: none;
+    }
+
+    .sidebar {
+        flex: none;
+    }
 }
