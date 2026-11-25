@@ -8,7 +8,8 @@ export default function Entry() {
                     <h1>hello from box</h1>
                 </article>
                 <article className="box2">
-                    <h1>hello from box2</h1>
+                    <img src={`${base}images/pb.jpg`} alt="Picture of Frida" />
+
                 </article>
             </section>
             <section className = "second-two-boxes">
