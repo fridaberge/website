@@ -1,5 +1,6 @@
 html, body {
     margin: 0;
+    background-color: #F7F3FC;
 }
 
 body {
@@ -11,68 +12,31 @@ body {
 }
 
 header {
-    background: #F55A5A;
+    background: #E9DDF8;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: #000000;
     height: 55px;
 }
 
-header > img {
-    width: 24px;
-    margin-right: 7px;
-}
 
 header > h1 {
     font-size: 0.9rem;
     font-weight: 500;
 }
 
-article.journal-entry {
-    display: flex;
+.normal-box > article{
+    background-color: #E9DDF8;
+    border-radius: 20px;
 }
 
-article.journal-entry .marker {
-    width: 7px;
-    margin-right: 4px;
+.box1{
 }
 
-article.journal-entry .main-image-container {
-    width: 125px;
-    height: 168px;
-    overflow: hidden;
-    border-radius: 5px;
-    flex-shrink: 0;
-    margin-right: 19px;
+.box2{
 }
 
-article.journal-entry .main-image {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-.info-container span.country {
-    text-transform: uppercase;
-    font-size: 0.7rem;
-    margin-right: 12px;
-}
-
-.info-container a {
-    color: #2B283A;
-    font-size: 0.7rem;
-}
-
-.info-container a:visited {
-    color: #918E9B;
-}
-
-.info-container h2.entry-title {
-    margin-top: 7px;
-    margin-bottom: 17px;
-}
-
-.info-container p.trip-dates {
-    font-weight: bold;
+.special-box{
+    background-color: #C9ADE9;
 }
