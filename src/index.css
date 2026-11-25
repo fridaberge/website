@@ -10,10 +10,6 @@ html, body {
     box-sizing: border-box;
 }
 
-.container{
-    margin: 20px 10px;
-}
-
 body {
     font-family: Inter, sans-serif;
 }
@@ -48,14 +44,8 @@ header > h1 {
   overflow-wrap: anywhere;
 }
 
-.boxes{
-    display: flex;
-    flex: 1;
-    min-width: 0;
-    gap: 20px;
-}
 
-.normal-box{
+.boxes{
     flex: 1;
     min-width: 0;
     display: flex;
@@ -63,10 +53,13 @@ header > h1 {
     gap: 15px;
 }
 
-.special-box{
-    flex: 1;
+.first-two-boxes,
+.second-two-boxes{
+    flex: 100%;
     min-width: 0;
-    background-color: #C9ADE9;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
 }
 
 .sidebar{
@@ -79,6 +72,7 @@ header > h1 {
 
 .box1,
 .box2,
+.box3,
 .special-box,
 .timeline,
 .socials {
@@ -86,33 +80,34 @@ header > h1 {
   border-radius: 20px;
   overflow-wrap: anywhere;
 }
-.normal-box > article,
+
+.box1,
+.box2,
+.box3,
 .timeline,
 .socials{
     background-color: #E9DDF8;
 }
 
-.box1{
+.special-box{
+    background-color: #C9ADE9;
 }
-
-.box2{
-}
-
 
 
 @media (max-width: 768px) {
    .container {
         margin: 20px 10px;
     }
+
     .main {
-    flex-direction: column;
+        flex-direction: column;
     }
 
     .boxes,
+    .special-box,
     .sidebar {
         width: 100%;
         position: static;
-        flex: none;
     }
 
     .sidebar {
