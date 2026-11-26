@@ -10,9 +10,9 @@ export default function Sidebar(){
                 <h1>Bachelor degree</h1>
             </section>
             <section className = "socials">
-                <h1>Instagram</h1>
-                <h1>Linkedin</h1>
-                <h1>GitHub</h1>
+                <a href="https://www.linkedin.com/in/fridatberge">LINKEDIN</a>
+                <a href="https://github.com/fridaberge">GITHUB</a>
+                <a href="https://www.instagram.com/fridatberge/">INSTAGRAM</a>
             </section>
         </div>
     )
