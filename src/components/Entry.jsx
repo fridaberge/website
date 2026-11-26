@@ -1,20 +1,25 @@
+const base = import.meta.env.BASE_URL
+
 export default function Entry() {
     return (
         <div className="boxes">
-            <section className = "normal-box">
+            <section className = "first-two-boxes">
                 <article className="box1">
                     <h1>hello from box</h1>
                 </article>
                 <article className="box2">
-                    <h1>hello from box2</h1>
+                    <img src={`${base}images/pb.jpg`} alt="Picture of Frida" />
+
                 </article>
+            </section>
+            <section className = "second-two-boxes">
                 <article className="box3">
                     <h1>hello from box3</h1>
                 </article>
-            </section>
-            <article className="special-box">
+                <article className="special-box">
                 <h1>hello from special box</h1>
-            </article>
+                </article>
+            </section>
         </div>
     )
     
